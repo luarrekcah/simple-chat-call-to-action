@@ -24,7 +24,7 @@
   .chat-icon {
     display: flex;
     align-items: center;
-    justify-content: center;
+    
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -51,20 +51,20 @@
 }
 
 .chat-container {
+  padding-bottom: 10px;
+  padding-left: 10px;
   position: absolute;
   bottom: 0;
   left: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 10px;
   animation: appear 0s ease-in-out forwards;
 }
 
 .chat-icon {
   display: flex;
   align-items: center;
-  justify-content: center;
+  
   width: 50px;
   height: 50px;
   border-radius: 25px;
@@ -119,8 +119,8 @@
 
 .dot {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: #3266af;
   animation: jumping 1s ease-in-out infinite;
