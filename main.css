@@ -93,9 +93,16 @@
 .chat-bubble {
   background-color: white;
   border-radius: 10px;
-  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   max-width: 400px;
+  min-width: 150px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation: bubble-appear 0.5s ease-in forwards;
 }
 
@@ -132,7 +139,7 @@
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 10px solid white;
+  border-bottom: 10px solid rgb(255, 255, 255);
   left: -4px;
   top: 45%;
   transform: translateX(-50%) rotate(270deg);
