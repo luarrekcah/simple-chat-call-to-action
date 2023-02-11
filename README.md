@@ -19,6 +19,7 @@ JavaScript - (end of body)
   /*
    * @param pic - picture url to bubble avatar
    * @param text - Message to show
+   * @param link - external link when user press on message (or avatar)
    * @param timer - time to show writing animation (in miliseconds)
    */
 
