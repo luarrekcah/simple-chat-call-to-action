@@ -26,6 +26,7 @@ JavaScript - (end of body)
   chatPopup({
     pic: "https://faro.edu.br/wp-content/uploads/2018/10/249246-afinal-como-saber-se-eu-tenho-perfil-para-ser-engenheiro.jpg",
     text: "Hello dear!",
+    link: "https://devluar.com",
     timer: 6000,
   });
 </script>
