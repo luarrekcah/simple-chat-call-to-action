@@ -2,7 +2,7 @@
 
 - [Preview](https://luarrekcah.github.io/simple-chat-call-to-action/)
 
-Css - (inside your head)
+CSS - (inside your head)
 
 ```html
 <link
