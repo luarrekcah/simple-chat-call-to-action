@@ -1,6 +1,5 @@
 const divChatPopup = document.createElement("div");
 divChatPopup.classList.add("chat-container");
-document.body.appendChild(divChatPopup);
 
 let timer = 5000;
 
