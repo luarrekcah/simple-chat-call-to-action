@@ -58,6 +58,7 @@
   display: flex;
   align-items: center;
   animation: appear 0s ease-in-out forwards;
+  z-index: 9999;
 }
 
 .chat-icon {
