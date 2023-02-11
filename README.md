@@ -6,7 +6,7 @@ CSS - (inside your head)
 
 ```html
 <link
-  href="https://raw.githubusercontent.com/luarrekcah/simple-chat-call-to-action/main/main.css"
+  href="https://luarrekcah.github.io/simple-chat-call-to-action/main.css"
   rel="stylesheet"
 />
 ```
@@ -14,7 +14,7 @@ CSS - (inside your head)
 JavaScript - (end of body)
 
 ```html
-<script src="https://raw.githubusercontent.com/luarrekcah/simple-chat-call-to-action/main/main.js"></script>
+<script src="https://luarrekcah.github.io/simple-chat-call-to-action/main.js"></script>
 <script>
   /*
    * @param pic - picture url to bubble avatar
