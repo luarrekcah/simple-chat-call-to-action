@@ -14,15 +14,19 @@ CSS - (inside your head)
 JavaScript - (end of body)
 
 ```html
- <script src="https://raw.githubusercontent.com/luarrekcah/simple-chat-call-to-action/main/main.js"></script>
- <script>
-/*
-* @param picURL - picture url to bubble avatar
-* @param text - Message to show
-* @param timer - time to show writing animation (in miliseconds)
-*/
+<script src="https://raw.githubusercontent.com/luarrekcah/simple-chat-call-to-action/main/main.js"></script>
+<script>
+  /*
+   * @param pic - picture url to bubble avatar
+   * @param text - Message to show
+   * @param timer - time to show writing animation (in miliseconds)
+   */
 
-//Example
- chatPopup("picURL", "Hello!", 6000)
- <script>
+  //Example
+  chatPopup({
+    pic: "https://faro.edu.br/wp-content/uploads/2018/10/249246-afinal-como-saber-se-eu-tenho-perfil-para-ser-engenheiro.jpg",
+    text: "Hello dear!",
+    timer: 6000,
+  });
+</script>
 ```

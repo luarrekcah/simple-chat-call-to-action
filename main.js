@@ -1,10 +1,13 @@
 const divChatPopup = document.createElement("div");
 divChatPopup.classList.add("chat-container");
 
+document.body.appendChild(divChatPopup);
+
 let timer = 5000;
 
-function chatPopup(pic, text, timer) {
+function chatPopup({ pic, text, timer }) {
   divChatPopup.innerHTML = `
+  
     <div class="chat-icon">
               <img
                 src="${pic}"
@@ -22,10 +25,10 @@ function chatPopup(pic, text, timer) {
                 <span class="dot"></span>
               </div>
             </div>
+            </a>
     `;
-    
 
-setTimeout(function () {
+  setTimeout(function () {
     document.getElementById("loading").style.display = "none";
     document.getElementById("messagebubble").style.display = "block";
   }, timer);
