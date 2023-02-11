@@ -1,10 +1,42 @@
-.chat-container {
+@media only screen and (min-width: 0px) and (max-width: 201px) {
+  #messagebubble {
+    font-size: 15px;
+  }
+  .chat-bubble {
+    width: 50%;
+    max-width: none;
+    height: 120px;
+  }
+}
+
+@media only screen and (min-width: 201px) and (max-width: 220px) {
+  .chat-container {
     position: absolute;
     bottom: 0;
     left: 0;
     display: flex;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #messagebubble {
+    font-size: 15px;
+  }
+  .chat-bubble {
+    width: 60%;
+    max-width: none;
+    height: 80px;
+  }
+}
+
+@media only screen and (min-width: 221px) and (max-width: 480px) {
+  .chat-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
     animation: appear 0s ease-in-out forwards;
   }
@@ -13,118 +45,157 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
     background-color: #d9d9d9;
     margin-right: 10px;
     position: relative;
     animation: icon-appear 0.5s ease-in-out forwards;
   }
 
-  .profile-picture {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-
-  .online-indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    background-color: green;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    animation: indicator-appear 0.5s ease-in-out forwards;
-  }
-
   .chat-bubble {
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px;
-    max-width: 400px;
-    position: relative;
-    animation: bubble-appear 0.5s ease-in forwards;
-  }
-
-  .close-button {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    border: none;
-    background-color: transparent;
-    color: #999;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  .loading {
-    display: inline-block;
-    margin: 10px;
+    width: 60%;
+    max-width: none;
   }
 
   .dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #3266af;
-    animation: jumping 1s ease-in-out infinite;
-    margin: 0 5px;
+    width: 5px;
+    height: 5px;
   }
 
-  @keyframes appear {
-    from {
-      opacity: 0;
-      transform: translateX(-100%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0%);
-    }
+  #messagebubble {
+    font-size: 14px;
   }
+}
 
-  @keyframes icon-appear {
-    from {
-      opacity: 0;
-      transform: translateX(-100%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0%);
-    }
-  }
+.chat-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  animation: appear 0s ease-in-out forwards;
+}
 
-  @keyframes indicator-appear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+.chat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #d9d9d9;
+  margin-right: 10px;
+  position: relative;
+  animation: icon-appear 0.5s ease-in-out forwards;
+}
 
-  @keyframes bubble-appear {
-    from {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0%);
-      opacity: 1;
-    }
-  }
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
-  @keyframes jumping {
-    0% {
-      transform: translateY(0);
-    }
-    33% {
-      transform: translateY(-10px);
-    }
-    66% {
-      transform: translateY(0);
-    }
+.online-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: indicator-appear 0.5s ease-in-out forwards;
+}
+
+.chat-bubble {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 400px;
+  position: relative;
+  animation: bubble-appear 0.5s ease-in forwards;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background-color: transparent;
+  color: #999;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.loading {
+  display: inline-block;
+  margin: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3266af;
+  animation: jumping 1s ease-in-out infinite;
+  margin: 0 5px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
   }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes icon-appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes indicator-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bubble-appear {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes jumping {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-10px);
+  }
+  66% {
+    transform: translateY(0);
+  }
+}
