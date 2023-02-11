@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat bottom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue&display=swap" rel="stylesheet">
+
   </head>
-  <body style="background-color: black">
+  <body style="background-color: black; font-family: 'Helvetica Neue', sans-serif;">
     <a
       href="https://wa.me/+556892253306"
       style="text-decoration: none; color: black"
@@ -22,7 +24,7 @@
         </div>
         <div class="chat-bubble">
           <!--<button class="close-button">&times;</button>-->
-          <p id="messagebubble" style="display: none;">Vamos fazer seu orçamento agora mesmo?</p>
+          <p id="messagebubble" style="display: none; color: #555 !important;">Vamos fazer seu orçamento agora mesmo?</p>
           <div class="loading" id="loading">
             <span class="dot"></span>
             <span class="dot"></span>
@@ -38,7 +40,8 @@
         bottom: 0;
         left: 0;
         display: flex;
-        align-items: flex-end;
+align-items: center;
+justify-content: center;
         padding: 10px;
         animation: appear 0s ease-in-out forwards;
       }
@@ -53,7 +56,7 @@
         background-color: #d9d9d9;
         margin-right: 10px;
         position: relative;
-        animation: icon-appear 1s ease-in-out forwards;
+        animation: icon-appear 0.5s ease-in-out forwards;
       }
 
       .profile-picture {
@@ -71,7 +74,7 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        animation: indicator-appear 1s ease-in-out forwards;
+        animation: indicator-appear 0.5s ease-in-out forwards;
       }
 
       .chat-bubble {
@@ -80,7 +83,7 @@
         padding: 10px;
         max-width: 400px;
         position: relative;
-        animation: bubble-appear 1s ease-in forwards;
+        animation: bubble-appear 0.5s ease-in forwards;
       }
 
       .close-button {
@@ -104,7 +107,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: #333;
+        background-color: #3266af;
         animation: jumping 1s ease-in-out infinite;
         margin: 0 5px;
       }
