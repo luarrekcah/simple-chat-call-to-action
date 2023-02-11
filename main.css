@@ -52,7 +52,7 @@
 .chat-container {
   padding-bottom: 10px;
   padding-left: 10px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   display: flex;
